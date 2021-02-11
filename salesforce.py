@@ -7,9 +7,9 @@ from datetime import datetime
 import numpy as np
 
 
-sf = Salesforce(username='patrick.carter@datadoghq.com',
-                password='BostonBruins[]2',
-                security_token='si4g3irPyxp8qzELb2akSuG4')
+sf = Salesforce(username='enter_username_here',
+                password='enter_password_here',
+                security_token='enter_securitytoken_here')
 
 sf_data_query = "SELECT Id, Name, sbaa__ApprovalStatus__c, Contract_Type__c, Finance_Type__c, OrderOps_Assigned__c FROM Opportunity " \
                 "WHERE ((sbaa__ApprovalStatus__c in ('Pending', 'Pre-Approved') AND StageName = 'Closed Won' AND CPQ_Start_Date__c = THIS_MONTH AND OrderOps_Assigned__c = null) " \
