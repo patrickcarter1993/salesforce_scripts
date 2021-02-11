@@ -2,9 +2,9 @@ from salesforce import assign_opp_not_assigned
 from simple_salesforce import Salesforce
 import pandas as pd
 
-sf = Salesforce(username='patrick.carter@datadoghq.com',
-                password='BostonBruins[]2',
-                security_token='si4g3irPyxp8qzELb2akSuG4')
+sf = Salesforce(username='enter_username_here',
+                password='enter_password_here',
+                security_token='enter_securitytoken_here')
 
 rep_data = sf.query_all("SELECT Name, X18_Char_User_ID__c, OrderOps_Level__c FROM User "
                         "WHERE (Title = 'Order Operations Analyst' OR Title = 'Order Operation Analyst-EMEA' OR Name "
