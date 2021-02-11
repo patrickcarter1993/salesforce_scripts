@@ -3,9 +3,9 @@ import pandas as pd
 import openpyxl as op
 import collections
 
-sf = Salesforce(username='patrick.carter@datadoghq.com',
-                password='BostonBruins[]2',
-                security_token='si4g3irPyxp8qzELb2akSuG4')
+sf = Salesforce(username='enter_username_here',
+                password='enter_password_here',
+                security_token='enter_securitytoken_here')
 
 opp_data = sf.query_all(
     "select (select Id, Name, Owner.Name, CloseDate, Type, Finance_Type__c, Owner_Sales_Department__c, "
